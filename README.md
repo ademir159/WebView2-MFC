@@ -1,10 +1,10 @@
-WebView2 Availability Checker (MFC)
+WebView2 Control para MFC.
 
-Este projeto fornece uma forma simples de verificar se o WebView2 está disponível no sistema antes de inicializar o componente em um projeto MFC.
+Este projeto fornece uma forma simples de utilizar o WebView2 dentro de projeto MFC, isso traz melhor utilização, pois em projetos mais antigos o sistema IE8 não fornecesse suporte a HTML5 e outras modernidades.
+
+Projeto inicialmente desenvolvido para o "Patcher" do jogo Flyff, porém pode ser vinculado a qualquer aplicação MFC em C++.
 
 ✅ Verificando Disponibilidade do WebView2
-
-A função abaixo retorna true se o runtime do WebView2 estiver instalado e pronto para uso:
 
 ```cpp
 bool IsWebView2Available()
@@ -21,8 +21,6 @@ bool IsWebView2Available()
 }
 ```
 🧪 Modo de uso
-
-Antes de criar o controle WebView2, chame IsWebView2Available() para garantir que o runtime está disponível. Exemplo:
 
 ```cpp
 if (IsWebView2Available())
@@ -42,3 +40,4 @@ if (IsWebView2Available())
 🔗 Links úteis
 
 Documentação oficial do WebView2 (Microsoft): https://learn.microsoft.com/en-us/microsoft-edge/webview2/
+
