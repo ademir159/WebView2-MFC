@@ -23,10 +23,13 @@ bool IsWebView2Available()
 🧪 Modo de uso
 
 ```cpp
+
+CWebView2Ctrl	m_wndWebView2;
+
 if (IsWebView2Available())
 {
-    m_wndWebView2_2.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, rcWebView, this, AFX_IDW_PANE_FIRST);
-    m_wndWebView2_2.Navigate(szURL);
+    m_wndWebView2.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, rcWebView, this, AFX_IDW_PANE_FIRST);
+    m_wndWebView2.Navigate(szURL);
 }
 ```
 
