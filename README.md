@@ -6,6 +6,7 @@ Este projeto fornece uma forma simples de verificar se o WebView2 está disponí
 
 A função abaixo retorna true se o runtime do WebView2 estiver instalado e pronto para uso:
 
+```cpp
 bool IsWebView2Available()
 {
     Microsoft::WRL::ComPtr<ICoreWebView2Environment> dummyEnv;
@@ -18,7 +19,7 @@ bool IsWebView2Available()
 
     return SUCCEEDED(hr);
 }
-
+```
 🧪 Modo de uso
 
 Antes de criar o controle WebView2, chame IsWebView2Available() para garantir que o runtime está disponível. Exemplo:
