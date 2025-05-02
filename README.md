@@ -24,11 +24,13 @@ bool IsWebView2Available()
 
 Antes de criar o controle WebView2, chame IsWebView2Available() para garantir que o runtime está disponível. Exemplo:
 
+```cpp
 if (IsWebView2Available())
 {
     m_wndWebView2_2.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, rcWebView, this, AFX_IDW_PANE_FIRST);
     m_wndWebView2_2.Navigate(szURL);
 }
+```
 
 📦 Requisitos
 
